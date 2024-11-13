@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_sigle"
+        android:title="@string/sigle">
+        <menu>
+            <item
+                android:id="@+id/list_of_sigles"
+                android:title="@string/liste_des_sigles" />
+            <item
+                android:id="@+id/number_of_sigles"
+                android:title="@string/nombre_de_sigle" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_module_list"
+        android:title="@string/module_list">
+        <menu>
+            <item
+                android:id="@+id/complete_list"
+                android:title="@string/liste_complete" />
+            <item
+                android:id="@+id/list_of_cs"
+                android:title="@string/liste_des_cs" />
+        </menu>
+    </item>
+</menu>

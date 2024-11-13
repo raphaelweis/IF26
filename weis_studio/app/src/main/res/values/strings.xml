@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">weis_studio</string>
+    <string name="string1">Je suis défini dans l\'interface XML</string>
+    <string name="string2">Je suis rédéfini dans le code Java de MainActivity</string>
+    <string name="string3">Je suis une ressource définie dans string.xml</string>
+    <string name="button_label">Button</string>
+</resources>

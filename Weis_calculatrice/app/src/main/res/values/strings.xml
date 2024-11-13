@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Weis_calculatrice</string>
+    <string name="b1_label">B1</string>
+    <string name="b2_label">B2</string>
+    <string name="name_input_hint">Entrez votre nom</string>
+    <string name="name_label">Votre nom ?</string>
+    <string name="surname_label">Votre prénom ?</string>
+    <string name="surname_input_hint">Entrez votre prénom</string>
+    <string name="results_label">Résultats...</string>
+    <string name="title">Activité INFORMATION</string>
+    <string name="info_label">Your name + surname</string>
+    <string name="back">Back</string>
+    <string name="cs_button_label">CS</string>
+    <string name="tm_button_label">TM</string>
+    <string name="st_button_label">ST</string>
+    <string name="tt_button_label">TT</string>
+    <string name="module_button_default_qty">0</string>
+    <string name="c06">C06</string>
+    <string name="eg23">EG23</string>
+    <string name="gl02">GL02</string>
+    <string name="if10">IF10</string>
+    <string name="if17">IF17</string>
+    <string name="if22">IF22</string>
+    <string name="if26">IF26</string>
+    <string name="if29">IF29</string>
+    <string name="if31">IF31</string>
+    <string name="if34">IF34</string>
+    <string name="lo10">LO10</string>
+    <string name="lo12">LO12</string>
+    <string name="nf21">NF21</string>
+    <string name="st09">ST09</string>
+    <string name="st10">ST10</string>
+    <string name="ret">RET</string>
+</resources>

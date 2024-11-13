@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Weis_cursus</string>
+    <string name="sigle">Sigle</string>
+    <string name="liste_des_sigles">Liste des sigles</string>
+    <string name="nombre_de_sigle">Nombre de sigles</string>
+    <string name="module_list">Module List</string>
+    <string name="liste_complete">Liste complète</string>
+    <string name="liste_des_cs">Liste des CS</string>
+    <string name="modules_du_programme_isi">Modules du programme ISI</string>
+</resources>

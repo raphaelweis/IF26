@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/main_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string1"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/main_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/string2"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/main_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/string3"
+        android:gravity="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_label"
+        android:layout_marginVertical="30dp"
+        android:textSize="20sp" />
+</LinearLayout>
