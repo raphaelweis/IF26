@@ -7,4 +7,15 @@
     <string name="liste_complete">Liste complète</string>
     <string name="liste_des_cs">Liste des CS</string>
     <string name="modules_du_programme_isi">Modules du programme ISI</string>
+    <string name="module_recycler">Module Recycler</string>
+    <string name="recycler">Recycler</string>
+    <string name="module_bdoh">Module BDOH</string>
+    <string name="liste_des_modules">Liste des modules</string>
+    <string name="ajout_d_un_module">Ajout d\'un module</string>
+    <string name="suppression_d_un_module">Suppression d\'un module</string>
+    <string name="add">Ajouter</string>
+    <string name="credit">Crédit</string>
+    <string name="category">Categorie</string>
+    <string name="parcours">Parcours</string>
+    <string name="delete">Supprimer</string>
 </resources>

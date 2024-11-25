@@ -80,6 +80,22 @@ public class MainActivity extends AppCompatActivity {
             listOfCS();
             return true;
         }
+        if (id == R.id.module_recycler_item) {
+            moduleRecyclerList();
+            return true;
+        }
+        if (id == R.id.bdoh_module_list) {
+            moduleDBList();
+            return true;
+        }
+        if (id == R.id.bdoh_add_module) {
+            addModule();
+            return true;
+        }
+        if (id == R.id.bdoh_delete_module) {
+            deleteModule();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -103,6 +119,26 @@ public class MainActivity extends AppCompatActivity {
     private void listOfCS() {
         Intent intent = new Intent(this, ModuleListeActivity.class);
         intent.putExtra("methode", "CS");
+        startActivity(intent);
+    }
+
+    private void moduleRecyclerList() {
+        Intent intent = new Intent(this, ModuleRecyclerActivity.class);
+        startActivity(intent);
+    }
+
+    private void moduleDBList() {
+        Intent intent = new Intent(this, DBModuleListActivity.class);
+        startActivity(intent);
+    }
+
+    private void addModule() {
+        Intent intent = new Intent(this, DBModuleAddActivity.class);
+        startActivity(intent);
+    }
+
+    private void deleteModule() {
+        Intent intent = new Intent(this, DBModuleDelActivity.class);
         startActivity(intent);
     }
 }
