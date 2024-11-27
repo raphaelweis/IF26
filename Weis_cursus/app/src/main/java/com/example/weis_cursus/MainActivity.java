@@ -1,6 +1,7 @@
 package com.example.weis_cursus;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Gravity;
@@ -12,10 +13,12 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import java.util.Locale;
@@ -23,6 +26,7 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
     TextView mainTv;
 
+    @RequiresApi(api = Build.VERSION_CODES.R)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -96,6 +100,10 @@ public class MainActivity extends AppCompatActivity {
             deleteModule();
             return true;
         }
+        if (id == R.id.room_module_list) {
+            moduleRoomList();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -139,6 +147,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void deleteModule() {
         Intent intent = new Intent(this, DBModuleDelActivity.class);
+        startActivity(intent);
+    }
+
+    private void moduleRoomList() {
+        Intent intent = new Intent(this, RoomModuleListActivity.class);
         startActivity(intent);
     }
 }

@@ -18,4 +18,5 @@
     <string name="category">Categorie</string>
     <string name="parcours">Parcours</string>
     <string name="delete">Supprimer</string>
+    <string name="module_room">Module Room</string>
 </resources>

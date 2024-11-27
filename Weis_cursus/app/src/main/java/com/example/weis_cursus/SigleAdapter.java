@@ -14,9 +14,9 @@ import androidx.annotation.NonNull;
 import java.util.ArrayList;
 
 public class SigleAdapter extends ArrayAdapter<String> {
-    ArrayList<String> liste;
-    Context contexte;
-    int ressource;
+    final ArrayList<String> liste;
+    final Context contexte;
+    final int ressource;
 
     public SigleAdapter(@NonNull Context context, int resource, @NonNull ArrayList<String> objects) {
         super(context, resource, objects);

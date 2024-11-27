@@ -15,9 +15,9 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 public class ModuleListeAdapter extends ArrayAdapter<Module> {
-    ArrayList<Module> liste;
-    Context contexte;
-    int ressource;
+    final ArrayList<Module> liste;
+    final Context contexte;
+    final int ressource;
 
     public ModuleListeAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Module> objects) {
         super(context, resource, objects);

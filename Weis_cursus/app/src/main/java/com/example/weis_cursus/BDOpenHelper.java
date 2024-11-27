@@ -57,35 +57,35 @@ public class BDOpenHelper extends SQLiteOpenHelper {
         db.close();
     }
 
-    public Module getModule(String sigle) {
-        SQLiteDatabase db = this.getReadableDatabase();
-
-        String query = "SELECT * FROM " + MODULE_TABLE_NAME +
-                " WHERE " + MODULE_ATTRIBUT_SIGLE + " = " + sigle;
-
-        Log.i(TAG + ":getEtudiant:q = ", query);
-
-        Cursor cursor = db.rawQuery(query, null);
-
-        if (cursor == null) return null;
-
-        cursor.moveToFirst();
-
-        @SuppressLint("Range") Module tuple = new Module(
-                cursor.getString(cursor.getColumnIndex(MODULE_ATTRIBUT_SIGLE)),
-                cursor.getString(cursor.getColumnIndex(MODULE_ATTRIBUT_CATEGORIE)),
-                cursor.getString(cursor.getColumnIndex(MODULE_ATTRIBUT_PARCOURS)),
-                cursor.getInt(cursor.getColumnIndex(MODULE_ATTRIBUT_CREDIT))
-        );
-
-        cursor.close();
-        db.close();
-        return tuple;
-    }
+//    public Module getModule(String sigle) {
+//        SQLiteDatabase db = this.getReadableDatabase();
+//
+//        String query = "SELECT * FROM " + MODULE_TABLE_NAME +
+//                " WHERE " + MODULE_ATTRIBUT_SIGLE + " = " + sigle;
+//
+//        Log.i(TAG + ":getEtudiant:q = ", query);
+//
+//        Cursor cursor = db.rawQuery(query, null);
+//
+//        if (cursor == null) return null;
+//
+//        cursor.moveToFirst();
+//
+//        @SuppressLint("Range") Module tuple = new Module(
+//                cursor.getString(cursor.getColumnIndex(MODULE_ATTRIBUT_SIGLE)),
+//                cursor.getString(cursor.getColumnIndex(MODULE_ATTRIBUT_CATEGORIE)),
+//                cursor.getString(cursor.getColumnIndex(MODULE_ATTRIBUT_PARCOURS)),
+//                cursor.getInt(cursor.getColumnIndex(MODULE_ATTRIBUT_CREDIT))
+//        );
+//
+//        cursor.close();
+//        db.close();
+//        return tuple;
+//    }
 
     @SuppressLint("LongLogTag")
     public ArrayList<Module> getAllModules() {
-        ArrayList<Module> listeModules = new ArrayList<Module>();
+        ArrayList<Module> listeModules = new ArrayList<>();
 
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "SELECT * FROM " + MODULE_TABLE_NAME;
@@ -112,25 +112,25 @@ public class BDOpenHelper extends SQLiteOpenHelper {
         return listeModules;
     }
 
-    @SuppressLint("LongLogTag")
-    public int updateModule(Module module) {
-        ContentValues tuple = new ContentValues();
-        tuple.put(MODULE_ATTRIBUT_SIGLE, module.getSigle());
-        tuple.put(MODULE_ATTRIBUT_CATEGORIE, module.getCategorie());
-        tuple.put(MODULE_ATTRIBUT_PARCOURS, module.getParcours());
-        tuple.put(MODULE_ATTRIBUT_CREDIT, module.getCredit());
-
-        Log.i(TAG + ":updateEtudiant:t = ", tuple.toString());
-
-        SQLiteDatabase db = this.getWritableDatabase();
-        int result = db.update(MODULE_TABLE_NAME, tuple,
-                MODULE_ATTRIBUT_SIGLE + " = ?",
-                new String[]{String.valueOf(module.getSigle())}
-        );
-
-        db.close();
-        return result;
-    }
+//    @SuppressLint("LongLogTag")
+//    public int updateModule(Module module) {
+//        ContentValues tuple = new ContentValues();
+//        tuple.put(MODULE_ATTRIBUT_SIGLE, module.getSigle());
+//        tuple.put(MODULE_ATTRIBUT_CATEGORIE, module.getCategorie());
+//        tuple.put(MODULE_ATTRIBUT_PARCOURS, module.getParcours());
+//        tuple.put(MODULE_ATTRIBUT_CREDIT, module.getCredit());
+//
+//        Log.i(TAG + ":updateEtudiant:t = ", tuple.toString());
+//
+//        SQLiteDatabase db = this.getWritableDatabase();
+//        int result = db.update(MODULE_TABLE_NAME, tuple,
+//                MODULE_ATTRIBUT_SIGLE + " = ?",
+//                new String[]{String.valueOf(module.getSigle())}
+//        );
+//
+//        db.close();
+//        return result;
+//    }
 
     public void deleteModule(String sigle) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -152,15 +152,15 @@ public class BDOpenHelper extends SQLiteOpenHelper {
         }
     }
 
-    public int countModules() {
-        SQLiteDatabase db = this.getReadableDatabase();
-        String query = "SELECT * FROM " + MODULE_TABLE_NAME;
-
-        Cursor cursor = db.rawQuery(query, null);
-
-        int result = cursor.getCount();
-
-        cursor.close();
-        return result;
-    }
+//    public int countModules() {
+//        SQLiteDatabase db = this.getReadableDatabase();
+//        String query = "SELECT * FROM " + MODULE_TABLE_NAME;
+//
+//        Cursor cursor = db.rawQuery(query, null);
+//
+//        int result = cursor.getCount();
+//
+//        cursor.close();
+//        return result;
+//    }
 }
