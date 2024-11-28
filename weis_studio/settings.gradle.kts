@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "weis_studio"
+rootProject.name = "Weis_studio"
 include(":app")
