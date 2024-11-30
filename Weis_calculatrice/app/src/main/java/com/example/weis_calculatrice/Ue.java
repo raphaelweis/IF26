@@ -3,11 +3,12 @@ package com.example.weis_calculatrice;
 import android.content.Context;
 import android.widget.Button;
 
+/** @noinspection ALL*/
 public class Ue {
-    Button button;
-    String category;
-    int credits;
-    int backgroundColor;
+    final Button button;
+    final String category;
+    final int credits;
+     int backgroundColor;
 
     public Ue(Context ctx, Button button, String category, int credits) {
         this.button = button;

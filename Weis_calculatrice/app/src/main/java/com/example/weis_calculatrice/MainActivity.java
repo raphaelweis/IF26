@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     EditText nameInput, surnameInput, resultInput;
     Button b1, b2;
 
-    ActivityResultLauncher<Intent> activityLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), o -> {
+    final ActivityResultLauncher<Intent> activityLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), o -> {
         assert o.getData() != null;
         String result = o.getData().getStringExtra("com.example.weis_calculatrice.result");
         resultInput.setText(result);
